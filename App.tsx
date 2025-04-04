@@ -11,7 +11,7 @@ const MainApp = () => {
   const { loadReminders, modalVisible, setModalVisible } = useReminderStore();
 
   useEffect(() => {
-    requestPermissions();
+    // requestPermissions();
     loadReminders();
     notifee.createChannel({ id: 'reminder', name: 'Reminders' });
   }, []);
